@@ -1,0 +1,128 @@
+.register-div {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.register-input label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.register-input input, 
+.register-input select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.register-input input:focus, 
+.register-input select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.register-input span {
+    color: red;
+    font-size: 12px;
+}
+
+.register-btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-btn-submit,
+.register-btn-cancel {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+.register-btn-submit:hover {
+    background-color: #218838;
+}
+
+.register-btn-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.register-btn-cancel:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .register-div {
+        padding: 15px;
+        padding-top: 40px;
+    }
+
+    .register-btn-submit,
+    .register-btn-cancel {
+        width: 100%;
+    }
+
+    .register-btn-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .register-input input,
+    .register-input select {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .register-btn-submit,
+    .register-btn-cancel {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,91 @@
+.booking {
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .booking h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .booking-empty {
+    color: #777;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .booking-header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .booking-div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+  
+  .booking-div h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .booking-div button {
+    grid-column: span 1;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-div button:hover {
+    background-color: #ff3333;
+  }
+  
+  @media (max-width: 768px) {
+    .booking-div {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
+  
+    .booking-div button {
+      grid-column: span 5;
+      margin-top: 10px;
+    }
+  
+    .booking-div h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .booking-div {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+  
+    .booking-div button {
+      grid-column: span 1;
+      margin-top: 10px;
+    }
+  
+    .booking-div h4 {
+      font-size: 0.9rem;
+    }
+  }
+  
