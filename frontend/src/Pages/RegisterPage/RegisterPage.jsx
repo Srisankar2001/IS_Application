@@ -84,7 +84,7 @@ export const RegisterPage = () => {
                 <div className='register-input-div'>
                     <div className='register-input'>
                         <label>Date</label>
-                        <input type='date' name='date' value={input.date} onChange={handleChange} />
+                        <input type='date' name='date' value={input.date} onChange={handleChange}/>
                         {error.date && <span>{error.date}</span>}
                     </div>
                     <div className='register-input'>
@@ -111,7 +111,7 @@ export const RegisterPage = () => {
                     </div>
                     <div className='register-input'>
                         <label>Vechile Number</label>
-                        <input type='text' name='vechile' value={input.vechile} onChange={handleChange} />
+                        <input type='text' name='vechile' value={input.vechile} onChange={handleChange} placeholder='Format : AB1234'/>
                         {error.vechile && <span>{error.vechile}</span>}
                     </div>
                     <div className='register-input'>

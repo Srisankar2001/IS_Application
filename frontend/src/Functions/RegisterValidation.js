@@ -44,7 +44,7 @@ export const RegisterValidation = (input) => {
     if (vechile === "") {
         error.vechile = "Vechile Number Field is Empty"
     } else if (!(/^[A-Z]{2}[0-9]{4}$/.test(vechile))) {
-        error.vechile = "Invalid Vechile Number"
+        error.vechile = "Invalid Vechile Number. Format(AB1234)"
     } else {
         error.vechile = ""
     }

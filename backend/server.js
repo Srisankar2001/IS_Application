@@ -16,6 +16,8 @@ app.use("/booking",bookingRouter)
 db.connect(err => {
     if(err){
         console.log(err.message)
+        console.log(err.code)
+        console.log(err.errno)
         console.log("DB Connect : Fail")
     }else{
         console.log("DB Connect : Success")
